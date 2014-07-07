@@ -1,8 +1,8 @@
 {
     "name": "accounts-facebook-cordova",
     "description": "Login service for Facebook accounts (works with cordova)",
-    "homepage": "https://github.com/andrewreedy/accounts-facebook-cordova",
+    "homepage": "https://github.com/andrewreedy/meteor-accounts-facebook-cordova",
     "author": "Andrew Reedy",
-    "version": "0.0.1",
-    "git": "https://github.com/andrewreedy/accounts-facebook-cordova.git"
+    "version": "0.0.2",
+    "git": "https://github.com/andrewreedy/meteor-accounts-facebook-cordova.git"
 }
