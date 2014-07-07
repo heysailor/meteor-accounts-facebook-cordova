@@ -8,12 +8,11 @@ Package.on_use(function(api) {
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
   api.use('facebook', ['client', 'server']);
+  
   api.use('service-configuration', ['client', 'server']);
-
   api.use('http', ['server']);
   api.use('underscore', 'server');
-  // api.use('service-configuration', ['client', 'server']);
 
-  api.add_files('facebook_server_native.js', 'server');
+  api.add_files('facebook_server.js', 'server');
   api.add_files("facebook.js");
 });

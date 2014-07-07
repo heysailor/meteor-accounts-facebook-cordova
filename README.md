@@ -7,6 +7,8 @@ This packages replaces the accounts-facebook package. It works with [phonegap-fa
 
 *Note: Currently only tested with iOS. Will test the other platforms asap.*
 
+*Current status: Login works great! Working on abstracting the graph api calls so they work from both native sdk or http request .. although it may be better to just stick with http.*
+
 ================
 
 ## Installation / Setup
@@ -22,6 +24,8 @@ This packages replaces the accounts-facebook package. It works with [phonegap-fa
 mrt add accounts-facebook-cordova
 ````
 *Note: For testing you can also add accounts-ui package.*
+
+
 
 ================
 
