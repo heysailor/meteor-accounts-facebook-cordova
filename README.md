@@ -43,7 +43,12 @@ mrt add accounts-facebook-cordova
         "user_interests", 
         "user_activities", 
         "read_friendlists"
-      ]      
+      ]   
+      "profileFields": [
+        "name",
+        "gender",
+        "location"
+      ]   
     }
   }
 }
