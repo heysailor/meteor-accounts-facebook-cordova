@@ -1,11 +1,12 @@
-Accounts Facebook Cordova
-================
+#Accounts Facebook Cordova
 
-## Introduction
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/meteorhybrid/platform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This packages replaces the accounts-facebook package. It works with [phonegap-facebook-plugin](https://github.com/phonegap/phonegap-facebook-plugin) when using cordova and falls back to the facebook package when in a browser. 
 
-*Note: Currently only tested with iOS. Will test the other platforms asap.*
+Platforms Tested
+* [x] iOS
+* [ ] Android
 
 *Current status: Login works great! Working on abstracting the graph api calls so they work from both native sdk or http request .. although it may be better to just stick with http.*
 
