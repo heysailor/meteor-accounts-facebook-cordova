@@ -10,8 +10,6 @@ Platforms Tested
 
 *Current status: Login works great! Working on abstracting the graph api calls so they work from both native sdk or http request .. although it may be better to just stick with http.*
 
-================
-
 ## Installation / Setup
 
 ##### Requirements
