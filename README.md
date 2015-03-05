@@ -4,7 +4,7 @@
 
 This packages replaces the accounts-facebook package. It works with [phonegap-facebook-plugin](https://github.com/phonegap/phonegap-facebook-plugin) when using cordova and falls back to the facebook package when in a browser. 
 
-Platforms Tested
+### Platforms Tested
 * [x] iOS
 * [ ] Android
 
