@@ -3,6 +3,6 @@
     "description": "Login service for Facebook accounts (works with cordova)",
     "homepage": "https://github.com/andrewreedy/meteor-accounts-facebook-cordova",
     "author": "Andrew Reedy",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "git": "https://github.com/andrewreedy/meteor-accounts-facebook-cordova.git"
 }
