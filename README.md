@@ -2,7 +2,9 @@
 
 [![Join the chat at https://gitter.im/buildhybrid/platform](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/buildhybrid/platform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This packages replaces the accounts-facebook package. It works with [phonegap-facebook-plugin](https://github.com/phonegap/phonegap-facebook-plugin) when using cordova and falls back to the facebook package when in a browser. 
+** this package is an upgrade to mrt:accounts-facebook-cordova (https://atmospherejs.com/mrt/accounts-facebook-cordova) and it implements Facebook SDK 4 + API 2.4
+
+This packages replaces the accounts-facebook package. It works with [cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4.git) when using cordova and falls back to the facebook package when in a browser. 
 
 ### Platforms Tested
 * [x] iOS
@@ -14,13 +16,13 @@ This packages replaces the accounts-facebook package. It works with [phonegap-fa
 
 ##### Requirements
 * [Cordova: 3.5](http://cordova.apache.org/)
-* [phonegap-facebook-plugin](https://github.com/phonegap/phonegap-facebook-plugin)
+* [cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4)
 
 ================
 
 ##### Package Installation
 ````
-mrt add accounts-facebook-cordova
+meteor add btafel:accounts-facebook-cordova
 ````
 *Note: For testing you can also add accounts-ui package.*
 
@@ -61,7 +63,7 @@ Refer to the [phonegap-facebook-plugin readme](https://github.com/phonegap/phone
 
 ##### Running your app with settings
 ````
-mrt --settings settings.json
+meteor --settings settings.json
 ````
 ================
 

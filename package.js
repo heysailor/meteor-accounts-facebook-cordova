@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Login service for Facebook accounts (works with cordova)"
+  summary: "Login service for Facebook (2.4) accounts (works with cordova)"
 });
 
 Package.on_use(function(api) {
