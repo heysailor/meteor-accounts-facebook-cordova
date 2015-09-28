@@ -4,7 +4,12 @@ Accounts.registerLoginHandler(function(loginRequest) {
   }
 
   loginRequest = loginRequest.authResponse;
-  var identity = getIdentity(loginRequest.accessToken);
+
+  var whitelisted = ['id', 'email', 'name', 'first_name',
+      'last_name', 'link', 'gender', 'locale', 'age_range'];
+
+  var identity = getIdentity(loginRequest.accessToken, whitelisted);
+
   var profilePicture = getProfilePicture(loginRequest.accessToken);
 
   console.log(profilePicture);
@@ -14,8 +19,6 @@ Accounts.registerLoginHandler(function(loginRequest) {
     expiresAt: (+new Date) + (1000 * loginRequest.expiresIn)
   };
 
-  var whitelisted = ['id', 'email', 'name', 'first_name',
-      'last_name', 'link', 'username', 'gender', 'locale', 'age_range'];
 
   var fields = _.pick(identity, whitelisted);
   _.extend(serviceData, fields);
@@ -30,10 +33,14 @@ Accounts.registerLoginHandler(function(loginRequest) {
 
 });
 
-var getIdentity = function (accessToken) {
+var getIdentity = function (accessToken, fields) {
   try {
     return HTTP.get("https://graph.facebook.com/me", {
-      params: {access_token: accessToken}}).data;
+      params: {
+        access_token: accessToken,
+        fields: fields
+      }
+    }).data;
   } catch (err) {
     throw _.extend(new Error("Failed to fetch identity from Facebook. " + err.message),
                    {response: err.response});
