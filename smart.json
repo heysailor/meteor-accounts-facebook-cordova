@@ -1,5 +1,5 @@
 {
-    "name": "accounts-facebook-cordova",
+    "name": "btafel:accounts-facebook-cordova",
     "description": "Login service for Facebook (2.4) accounts (works with cordova)",
     "homepage": "https://github.com/btafel/accounts-facebook",
     "author": "Bryan Tafel",
