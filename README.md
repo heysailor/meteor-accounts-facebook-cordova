@@ -4,7 +4,9 @@
 
 ** this package is an upgrade to mrt:accounts-facebook-cordova (https://atmospherejs.com/mrt/accounts-facebook-cordova) and it implements Facebook SDK 4 + API 2.4
 
-This packages replaces the accounts-facebook package. It works with [cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4.git) when using cordova and falls back to the facebook package when in a browser. 
+This packages replaces the accounts-facebook package. It works with [cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4.git) when using cordova and falls back to the facebook package when in a browser.
+
+...
 
 ### Platforms Tested
 * [x] iOS
@@ -22,10 +24,22 @@ This packages replaces the accounts-facebook package. It works with [cordova-plu
 
 ##### Package Installation
 ````
-meteor add btafel:accounts-facebook-cordova
+meteor add heysailor:accounts-facebook-cordova
 ````
 *Note: For testing you can also add accounts-ui package.*
 
+You must install the facebookConnect cordova plugin - on meteor, add to ./meteor/cordova-plugins:
+````
+cordova-plugin-facebook4@1.6.1
+````
+
+Then in ./meteor/mobile-config:
+````
+App.configurePlugin('cordova-plugin-facebook4', {
+  APP_ID: 'XXX',
+  APP_NAME: 'XXX'
+});
+````
 
 
 ================
@@ -40,9 +54,9 @@ meteor add btafel:accounts-facebook-cordova
   "public": {
     "facebook": {
       "permissions": [
-        "basic_info", 
-        "user_interests", 
-        "user_activities", 
+        "basic_info",
+        "user_interests",
+        "user_activities",
         "read_friendlists"
       ]   
       "profileFields": [
