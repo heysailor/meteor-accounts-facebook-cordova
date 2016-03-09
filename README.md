@@ -58,7 +58,7 @@ App.configurePlugin('cordova-plugin-facebook4', {
         "user_interests",
         "user_activities",
         "read_friendlists"
-      ]   
+      ],
       "profileFields": [
         "name",
         "gender",
